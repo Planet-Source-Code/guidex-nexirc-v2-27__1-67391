@@ -1,0 +1,3 @@
+// Play Audio
+// By Leon Aiossa
+PlayAudio(OpenDialog[$supported|Open Audio|$apppath\audio]);

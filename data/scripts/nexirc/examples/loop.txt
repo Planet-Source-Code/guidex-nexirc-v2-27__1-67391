@@ -1,0 +1,13 @@
+'Changes background color 2000 times
+'Example script by Leon Aiossa
+
+Option Explicit
+FlashLoop
+
+Private Sub FlashLoop()
+Dim i
+For i = 0 to 2000
+     mdiNexIRC.BackColor = i
+Next
+End Sub
+

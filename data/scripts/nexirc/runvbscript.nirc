@@ -1,0 +1,5 @@
+// Run VB Script
+// By Leon Aiossa
+DeclareVariable(lFile);
+SetVariableData(lFile::OpenDialog[Text Files {*.txt}+*.txt+All Files {*.*}+*.*+|Open VB Script|$apppath\data\scripts\]);
+RunVBScriptFile(ReturnVariable[lFile]);

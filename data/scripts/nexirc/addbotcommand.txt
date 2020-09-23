@@ -1,0 +1,2 @@
+frmAddBotCommand.Show
+frmAddBotCommand.cboAddType.Listindex = 1

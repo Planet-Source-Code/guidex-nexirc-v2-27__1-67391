@@ -1,0 +1,6 @@
+// Eggdrop Login
+// Script By Leon Aiossa
+DeclareVariable(lPassword);
+SetVariableData(lPassword::$input::Enter Password::NexIRC::NULL);
+SendActiveServer(PRIVMSG $nicklist :OP ReturnVariable[lPassword]);
+ClearVariable(lPassword);

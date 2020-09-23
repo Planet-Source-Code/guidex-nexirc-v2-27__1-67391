@@ -1,0 +1,15 @@
+CheckActiveWindow
+sub CheckActiveWindow()
+If mdiNexIRC.ActiveForm.WindowState <> 2 Then 
+	mdiNexIRC.ActiveForm.WindowState = 2
+	Dim x, v
+	v = 10
+	x = timer
+	Do until x + v = timer
+	loop
+End If
+end sub
+
+sub anythingelse
+
+end sub

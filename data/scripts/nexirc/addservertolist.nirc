@@ -1,0 +1,17 @@
+// Add server to list Script
+// By Leon Aiossa
+VBScript(frmCustomize.Show);
+VBScript(frmCustomize.fraSettings(0).Visible = True);
+VBScript(frmCustomize.fraSettings(1).Visible = False);
+VBScript(frmCustomize.fraSettings(2).Visible = False);
+VBScript(frmCustomize.fraSettings(3).Visible = False);
+VBScript(frmCustomize.fraSettings(4).Visible = False);
+VBScript(frmCustomize.fraSettings(5).Visible = False);
+VBScript(frmCustomize.fraSettings(6).Visible = False);
+VBScript(frmCustomize.fraSettings(7).Visible = False);
+VBScript(frmCustomize.fraSettings(8).Visible = False);
+VBScript(frmCustomize.fraSettings(9).Visible = False);
+VBScript(frmCustomize.fraSettings(10).Visible = False);
+VBScript(frmAddServer.txtName.Text = "$server");
+VBScript(frmAddServer.txtPort.Text = "$port");
+VBScript(frmAddServer.Show);

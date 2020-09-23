@@ -1,0 +1,5 @@
+'Useage: <Variable> = ServerText
+'Example Script by Leon Aiossa
+
+Option Explicit
+MsgBox ServerText

@@ -1,0 +1,18 @@
+// Oper Script
+// By Leon Aiossa
+DeclareVariable(msg);
+DeclareVariable(msg2);
+SetVariableData(msg::ReadINI[$ircsettings|Settings|OperName|$mynick]);
+SetVariableData(msg2::ReadINI[$ircsettings|Settings|OperPass|$password]);
+DeclareVariable(lUsername);
+DeclareVariable(lPassword);
+SetVariableData(lUsername::$input::Enter Username::NexIRC::ReturnVariable[msg]);
+SetVariableData(lPassword::$input::Enter Password::NexIRC::ReturnVariable[msg2]);
+SendActiveServer(OPER ReturnVariable[lUsername] ReturnVariable[lPassword]);
+DoColor($activewindow::4[3OPER4] ReturnVariable[lUsername] ReturnStars[ReturnVariable[lPasword]]);
+WriteINI($ircsettings::Settings::OperName::ReturnVariable[lUsername]);
+WriteINI($ircsettings::Settings::OperPass::ReturnVariable[lPassword]);
+ClearVariable(lPassword);
+ClearVariable(lUsername);
+ClearVariable(msg2);
+ClearVariable(msg);

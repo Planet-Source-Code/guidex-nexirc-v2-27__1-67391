@@ -1,0 +1,13 @@
+// File Offer Script
+// By Leon Aiossa
+VBScript(Dim msg);
+VBScript(msg = mdiNexIRC.ActiveForm.Tag);
+DeclareVariable(lChannelName);
+SetVariableData(lChannelName::ReturnVSVariable[msg]);
+DeclareVariable(lFilename);
+SetVariableData(lFilename::OpenDialog[$supported|Open Audio|$apppath\audio]);
+GetFileTitle(lFilename);
+SendActiveServer(PRIVMSG ReturnVariable[lChannelName] :4{File Offer} Type: 7!ReturnVariable[lFilename] 4{To Recieve File});
+DoColor($activewindow::12<$mynick> 4{File Offer} Type: 7!ReturnVariable[lFilename] 4{To Recieve File});
+ClearVariable(lFilename);
+ClearVariable(lChannelName);

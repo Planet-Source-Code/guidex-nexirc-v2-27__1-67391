@@ -1,0 +1,80 @@
+[Index]
+NumSections=6
+[0]
+NumItems=13
+MenuName=ROOT
+Item1=Whois
+Item1Command=SendActiveServer(WHOIS $nicklist);
+Item2=Whowas
+Item2Command=SendActiveServer(WHOWAS $nicklist);
+Item3=-
+Item3Command=EmptyCommand();
+Item4=Messages
+Item4Command=NX_InheritMenu(_ME);
+Item5=DCC
+Item5Command=NX_InheritMenu(_DC);
+Item6=-
+Item6Command=EmptyCommand();
+Item7=Kick
+Item7Command=SendActiveServer(KICK $channel $nicklist);
+Item8=Ban
+Item8Command=SendActiveServer(MODE $channel +b $nicklist);
+Item9=Ban (Address)
+Item9Command=BanAddress($nicklist);
+Item9=Kick/Ban
+Item9Command=KickBanUser($channel::$nicklist);
+Item10=-
+Item10Command=EmptyCommand();
+Item11=Ops
+Item11Command=NX_InheritMenu(_OP);
+Item12=Add
+Item12Command=NX_InheritMenu(_AD);
+Item13=Bots
+Item13Command=NX_InheritMenu(_BO);
+[1]
+NumItems=3
+MenuName=_ME
+Item1=Query
+Item1Command=Queryuser($nicklist);
+Item2=Notice
+Item2Command=Notice($nicklist::$input::Enter Message::NexIRC::NULL);
+Item3=Invite
+Item3Command=RunScriptFile(nexirc\invite.nirc);
+[2]
+MenuName=_DC
+NumItems=2
+Item1=DCC Send
+Item1Command=VBScript(frmSendFile.Show);
+Item2=DCC Chat
+Item2Command=DCCChat();
+[3]
+MenuName=_OP
+NumItems=4
+Item1=Op
+Item1Command=RunScriptFile(nexirc\op.nirc);
+Item2=Deop
+Item2Command=RunScriptFile(nexirc\deop.nirc);
+Item3=Voice
+Item3Command=RunScriptFile(nexirc\voice.nirc);
+Item4=Devoice
+Item4Command=RunScriptFile(nexirc\devoice.nirc);
+[4]
+NumItems=3
+MenuName=_AD
+Item1=Ignore
+Item1Command=AddToIgnore($nicklist);
+Item2=Notify
+Item2Command=AddToNotify($nicklist);
+Item3=Add Bot
+Item3Command=AddBot($nicklist);
+[5]
+NumItems=4
+MenuName=_BO
+Item1=Eggdrop Login
+Item1Command=RunScriptFile(nexirc\eggdroplogin.nirc);
+Item2=-
+Item2Command=EmptyCommand();
+Item3=Run Command ...
+Item3Command=VBScript(frmBots.Show);
+Item4=Add Bot
+Item4Command=AddBot($nicklist);

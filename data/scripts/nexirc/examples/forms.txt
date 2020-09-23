@@ -1,0 +1,7 @@
+'mdiNexIRC - Parent window
+'frmStatus - Status window
+'frmChat - Dcc chat window
+'frmChannels - Channels list window
+'frmQuery - Query window
+'frmTextEditor - Text editor
+'frmWeb - Webbrowser

@@ -1,0 +1,4 @@
+// Add bot
+// By Leon Aiossa
+VBScript(frmAddBotCommand.Show);
+VBScript(frmAddBotCommand.txtNickname.Text = $querynick);

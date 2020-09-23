@@ -1,0 +1,86 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+<TITLE></TITLE>
+</HEAD>
+<BODY text=white link=lightcyan bgColor=black>
+<DIV><FONT face=Tahoma size=2 color=white>- Scripting Tutorial 1 (The Hello Bob Script)</FONT></DIV>
+<DIV><FONT face=Tahoma size=2>By <A 
+href="mailto:guidex@team-nexgen.com">Leon 
+Aiossa</A>&nbsp;(|guideX|)</FONT></DIV>
+<OL>
+  <LI><FONT face=Tahoma color=white size=2>From the status window of NexIRC, 
+type:<STRONG> 
+</STRONG><STRONG><FONT 
+  color=green>DeclareVariable(lName);</FONT></STRONG> Then hit enter. Asuming 
+  your typed it correctly, NexIRC should&nbsp;add the following text to the 
+  Status window ':. Script Command [DeclareVariable(lName);]', You just declared 
+  a variable. Variables are usefull if you wish to hold a number or words in 
+  memory until NexIRC is closed or you type ?clear from the status window. If 
+  your scripting syntax was incorrect, NexIRC will say something like ':. 
+  Unknown Command'.</FONT></LI>
+  <LI><FONT color=white><FONT face=Tahoma><FONT size=2>Type: 
+<STRONG><FONT color=green>SetVariableData(lName::$input::Enter 
+  Your Name::NexIRC::Bob);</FONT>   
+</STRONG></FONT></FONT><FONT face=Tahoma size=2>Then hit enter.</FONT><FONT face=Tahoma size=2>You should be prompted with the $input command for 
+you to enter your name, hit <STRONG><FONT 
+  color=green>enter</FONT></STRONG> to use Bob.</FONT></FONT></LI>
+  <LI><FONT color=white><FONT face=Tahoma><FONT size=2>Then Type: <STRONG><FONT 
+  color=green>MsgBox(Hello ReturnVariable[lName]);</FONT> 
+</STRONG></FONT></FONT><FONT face=Tahoma size=2>Then hit enter.</FONT><FONT face=Tahoma size=2>If everything was done proporly, you should have 
+seen a MsgBox which says 'Hello Bob'.</FONT></FONT></LI>
+  <LI><FONT color=white><FONT face=Tahoma><FONT size=2>Now that you are done using the 'lName' 
+variable, you should probably clear it from memory. Type 
+<STRONG><FONT 
+  color=green>ClearVariable(lName);</FONT></STRONG></FONT></FONT><FONT face=Tahoma size=2>Then Hit Enter.</FONT></FONT></LI>
+  <LI><FONT color=white><FONT face=Tahoma size=2>Now that you have created your first script, you 
+should probably view it to make sure it is typed correctly.</FONT><FONT face=Tahoma><FONT size=2>Type 
+<STRONG><FONT 
+  color=green>?view</FONT>,</STRONG></FONT></FONT><FONT face=Tahoma size=2>then hit enter.</FONT><FONT face=Tahoma size=2>The ?view command is good when you are writting 
+small code fragments.</FONT></FONT></LI>
+  <LI><FONT color=white><FONT face=Tahoma><FONT size=2>If the script looks good, you should learn 
+how to save it. Type: <STRONG><FONT 
+  color=green>?save</FONT></STRONG></FONT></FONT><FONT face=Tahoma size=2>, then hit enter.</FONT></FONT></LI>
+  <LI><FONT color=white><FONT face=Tahoma size=2>NexIRC will ask you for a filename, do not enter a 
+full path, just a filename.</FONT><FONT face=Tahoma size=2> For example, you could 
+type&nbsp;'hellobob.nirc' or 'mytestscripts\hellobob.nirc', however for now, 
+type<STRONG><FONT 
+  color=green>hellobob.nirc</FONT></STRONG>,</FONT><FONT face=Tahoma size=2>Then hit enter.</FONT><FONT face=Tahoma size=2>Your script should be in 
+&lt;nexircdir&gt;\data\scripts\hellobob.nirc.</FONT></FONT></LI>
+  <LI><FONT face=Tahoma size=2 color=white>Right click the 
+  status window, and click <FONT color=green>       
+<STRONG>'Window/Menu Editor</STRONG>'</FONT>.</FONT></LI>
+  <LI><FONT face=Tahoma size=2 color=white>In the 'menus' 
+  listbox (on the bottom right), you should see a menu called <FONT 
+  color=green>         
+     '<STRONG>ROOT</STRONG>'</FONT>  click that. </FONT></LI>
+  <LI><FONT face=Tahoma size=2><FONT color=white>  Where it says 'Caption' type<STRONG><FONT color=green>Hello 
+  Bob</FONT> 
+</STRONG>, where it says 'Command'&nbsp;type </FONT><FONT 
+  color=green>     
+<STRONG>RunScriptFile(hellobob.nirc);</STRONG></FONT> 
+</FONT></LI>
+  <LI><FONT face=Tahoma size=2 color=white> Click '<STRONG>Add</STRONG>' on the right 
+hand side above the 'sub menus' listbox. </FONT></LI>
+  <LI><FONT face=Tahoma size=2 color=white>Now right click 
+  on your status window, and you should see an entry at the bottom called '<FONT 
+  color=green>         
+        <STRONG>Hello Bob</STRONG>'</FONT>, click it. 
+  It should prompt you with a 
+Msgbox that says "Script: Hello Bob".</FONT></LI>
+  <LI><FONT face=Tahoma size=2>After you have completed this script, you should 
+  probably clear it from your status window. Type <STRONG><FONT 
+  color=green>?clear</FONT></STRONG> then hit enter.</FONT></LI></OL>
+<FONT face=Tahoma size=2>Just the code:</FONT><br>
+<FONT face=Tahoma size=2><STRONG><FONT 
+color=#008000>DeclareVariable(lName);</FONT></STRONG> </FONT><br>
+<STRONG><FONT size=2><FONT face=Tahoma><FONT 
+color=#008000>SetVariableData(lName::$input::Enter Your 
+Name::NexIRC::Bob);</FONT> </FONT></FONT></STRONG><br><STRONG><FONT size=2><FONT 
+face=Tahoma><FONT color=#008000>MsgBox(Hello ReturnVariable[lName]);</FONT> 
+<br></FONT></FONT></STRONG>
+<STRONG><FONT face=Tahoma size=2><FONT 
+color=#008000>ClearVariable(lName);</FONT> </FONT></STRONG>
+
+</BODY>
+</HTML>
