@@ -1,0 +1,5 @@
+// DeVoice Script
+// By Leon Aiossa
+SendActiveServer(MODE $channel -v $nicklist);
+VBScript(mdiNexIRC.ActiveForm.lstNames.ListItems.Clear);
+SendActiveServer(NAMES $channel);

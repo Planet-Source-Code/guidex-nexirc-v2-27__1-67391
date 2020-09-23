@@ -1,0 +1,4 @@
+// Invite Script
+// By Leon Aiossa
+SendActiveServer(INVITE $nicklist $input::Enter Channel::NexIRC::NULL);
+DoColor($activewindow::12Invited 13[$nicklist]);

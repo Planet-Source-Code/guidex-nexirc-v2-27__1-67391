@@ -1,0 +1,186 @@
+// Default NexIRC Channel Window Popup Menu
+[Index]
+NumSections=15
+[Icons]
+NumIcons=13
+Icon1=connect.bmp
+Icon2=disconnect.bmp
+Icon3=channel.bmp
+Icon4=customize.bmp
+Icon5=dccsend.bmp
+Icon6=dccchat.bmp
+Icon7=menueditor.bmp
+Icon8=add.bmp
+Icon9=server.bmp
+Icon10=settings.bmp
+Icon11=dcc.bmp
+Icon12=bot.bmp
+Icon13=setup.bmp
+[0]
+MenuName=ROOT
+NumItems=13
+Item1=Add
+Item1Command=NX_InheritMenu(_AD);
+Item1Icon=8
+Item2=-
+Item2Command=EmptyCommand();
+Item3=Auto Join
+Item3Command=NX_InheritMenu(_AJ);
+Item3Icon=3
+Item4=System Stats
+Item4Command=NX_InheritMenu(_ST);
+Item5=DCC
+Item5Command=NX_InheritMenu(_DC);
+Item6=File Offer
+Item6Command=NX_InheritMenu(_OF);
+Item7=Notice
+Item7Command=NX_InheritMenu(_NO);
+Item8=Audio
+Item8Command=NX_InheritMenu(_AU);
+Item9=-
+Item9Command=EmptyCommand();
+Item10=Window
+Item10Command=NX_InheritMenu(_WI);
+Item11=Settings
+Item11Command=NX_InheritMenu(_SI);
+Item12=-
+Item12Command=EmptyCommand();
+Item12Icon= 0
+Item13=Proporties
+Item13Command=ShowChannelProporties();
+Item13Icon= 13
+[1]
+MenuName=_AD
+NumItems=2
+Item1=Add to Auto Join
+Item1Command=AddAutoJoin($activechannel::$activenetwork);
+Item1Icon=8
+Item2=Add to Channel Folder
+Item2Command=AddChannelFolder($activechannel);
+Item2Icon=8
+[2]
+MenuName=_ST
+NumItems=7
+Item1=Advanced System Stats
+Item1Command=ShowAdvancedSystemStats();
+Item2=System Stats Console
+Item2Command=ShowSystemStats(True::True::True::True::True::True::True);
+Item3=-
+Item3Command=EmptyCommand();
+Item4=Show All
+Item4Command=ShowSystemStats(True::True::True::True::True::True::False);
+Item5=Operating System
+Item5Command=ShowSystemStats(True::False::False::False::False::False::False);
+Item6=Show CPU
+Item6Command=ShowSystemStats(False::True::True::True::True::False::False);
+Item7=Show SCSI Devices
+Item7Command=ShowSystemStats(False::False::False::False::False::True::False);
+[3]
+MenuName=_NO
+NumItems=2
+Item1=Notice
+Item1Command=Notice($activechannel::$input::Enter Message::NexIRC::NULL);
+Item2=Notice (Ops)
+Item2Command=NoticeOps($activechannel::$input::Enter Message::NexIRC::NULL);
+[4]
+MenuName=_WI
+NumItems=3
+Item1=Menu Editor
+Item1Command=EditMenu(channel);
+Item1Icon=7
+Item2=Close
+Item2Command=CloseActiveWindow();
+Item3=Save Log
+Item3Command=SaveLog();
+[5]
+MenuName=_SC
+NumItems=1
+Item1=Edit Menu
+Item1Command=VBScript(frmMenuEditor.Show);
+[6]
+MenuName=_AU
+NumItems=6
+Item1=Quick Play
+Item1Command=PlayAudio(OpenDialog[$supported|Open Audio|$apppath\audio\]);
+Item2=-
+Item2Command=EmptyCommand();
+Item3=Mixer
+Item3Command=ToggleMixer();
+Item4=Alarm
+Item4Command=VBSCript(frmAlarm.Show);
+Item5=Controls
+Item5Command=NX_InheritMenu(_CO);
+Item6=Playlist
+Item6Command=NX_InheritMenu(_PL);
+[7]
+MenuName=_CO
+NumItems=3
+Item1=Play
+Item1Command=ResumePlayback();
+Item2=Pause
+Item2Command=VBScript(mdiMain.ctlMP3OCX.Pause);
+Item3=Stop
+Item3Command=VBScript(mdiMain.ctlMP3OCX.Stop);
+[8]
+MenuName=_PL
+NumItems=3
+Item1=Add to Playlist
+Item1Command=VBScript(frmAddmedia.Show);
+Item2=Add Folder to Playlist
+Item2Command=VBScript(frmAddFolderToPlaylist);
+Item3=Add File to Playlist
+Item3Command=RunScriptFile(nexirc\addfiletoplaylist.nirc);
+[9]
+MenuName=_AJ
+NumItems=2
+Item1=Edit
+Item1Command=EditAutojoin();
+Item1Icon=3
+Item2=Activate
+Item2Command=ActivateAutojoin();
+Item2Icon=3
+[10]
+MenuName=_OF
+NumItems=1
+Item1=Offer Media
+Item1Command=RunScriptFile(nexirc\fileoffer.nirc);
+[11]
+MenuName=_BO
+NumItems=3
+Item1=Add Bot
+Item1Command=VBScript(frmAddBotCommand.Show);
+Item1Icon=12
+Item2=Add Bot Command
+Item2Command=RunVBScriptFile(nexirc\addbotcommand.txt);
+Item2Icon=12
+Item3=Run Command
+Item3Command=VBScript(frmBots.Show);
+Item3Icon=12
+[12]
+MenuName=_SI
+NumItems=5
+Item1=Customize
+Item1Command=VBScript(frmCustomize.Show);
+Item1Icon=10
+Item2=Setup Wizard
+Item2Command=VBScript(frmSetupWizard.Show);
+Item2Icon=10
+Item3=-
+Item3Command=EmptyCommand();
+Item4=Load Settings
+Item4Command=LoadSettings();
+Item4Icon=10
+Item5=Save Settings
+Item5Command=SaveSettings();
+Item5Icon=10
+[14]
+MenuName=_DC
+NumItems=4
+Item1=Send
+Item1Command=VBScript(frmSendFile.Show);
+Item2=Chat
+Item2Command=DCCChat();
+Item3=Download Manager
+Item3Command=VBScript(frmDownloadManager.Show);
+Item4=File Offer
+Item4Command=NX_InheritMenu(_OF);

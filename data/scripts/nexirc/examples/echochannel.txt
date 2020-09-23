@@ -1,0 +1,6 @@
+'Useage: EchoChannel <Channel>, <Message>
+'Example script by Leon Aiossa
+
+Option Explicit
+EchoChannel "#nexgen", "NexIRC is Awesome"
+

@@ -1,0 +1,38 @@
+[Changes from 2.22 to 2.27]
+- Many
+[Changes from 2.21 to 2.22]
+- Added Auto Connect Dialog
+- Added Auto Connect Functions
+- Change Default theme number of bars from 20 to 8
+- Remove RichtextBox library and source code pertaining to it because of inability of RichTextBox to preform Bottom to top text
+- Added IRC TBox which enables bottom to top text and easier more flicker free IRC browsing
+- Added Menu Editor to Scripting System
+- Added Menu's Status, Channel, Query and Nicklist to data directory
+- Added nifty menu icons to new menus
+- Added custom made NIRC Script control system. Files are to be saved with a .nirc extension.
+- Added System Stats console
+- Added Script 'addtoautoconnect.nirc' for menu based access to adding servers to your autoconnect system
+- Added Script 'odtest.nirc'. Tests the PlayFile, PlayMp3, OpenDialog, $curdir, and $mp3 proporties and values.
+- Added Script 'openmusic.nirc'. Plays specified MP3 file
+- Added Script 'operlogin.nirc'. Uses the oper login command once on IRC to log you in as an IRC system administrator.
+- Added Script 'resumeplayback.nirc'. This script resolves an inherant problem between the 'MenuPlay' command and menu's.
+- Added VBScript 'showabout.txt'. Opens the customize dialog box and shows the about screen.
+- Put all NexIRC file in your data directory
+- Added 'Auto Maximize' feature found in the 'Windows' menu in NexIRC
+- Made a dockable toolwindow out of the mixer (now known as the 'Mobile Mixer')
+- Removed all extra VBCrLf's, line feeds, and carriage returns to lines of text on IRC.
+- Added Port scanner to customize window. Port scanner will scan the IRC server for open ports.
+- Added 'Auto Port Scan' option. When enabled, IRC servers will automatically be sorted upon viewing them
+- When a URL is sent over IRC, clicking on that link will automatically load the internal NexIRC browser or external browser to view it.
+- Added 'Update List' button to update your servers list (points to http://www.team-nexgen.com/update.shtml
+- Added Color combo's to the Customize Window. Currently they are being used so the user can change Nicklist colors.
+- Removes the listboxes which were used for nicklists with Listview's, custom colors and icons.
+- Added Blacklist features. When a user is blacklisted, he will be banned from all channels automatically, and kicked on site
+- Changed Default IRC colors
+- Added enter key to the Join Channel window
+- Added Channel Control for channel windows when double clicked
+- Fixed many bugs and shortcomings which I forgot to write down.
+[Changes from 2.22 to 2.23]
+(11/7/04 - |guideX|)
+- Fixed channel menu bug where clicking the settings menu exposes the System Stats menu
+- Added Additional icons to customize window buttons

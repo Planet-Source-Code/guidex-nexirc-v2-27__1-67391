@@ -1,0 +1,10 @@
+'Useage: Echo <Form>, <Message>
+'Example script by Leon Aiossa
+
+Option Explicit
+EchoStatus "NexIRC rocks!"
+Public Sub EchoStatus(lText)
+'If Len(lText) <> 0 Then
+    Echo "status", lText & VbCrLf
+'End If
+End Sub

@@ -1,0 +1,5 @@
+'Useage: <Var> = ServerName
+'Example script by Leon Aiossa
+
+Option Explicit
+MsgBox ServerName

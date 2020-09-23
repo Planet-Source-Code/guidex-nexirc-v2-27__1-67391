@@ -1,0 +1,10 @@
+// NexIRC Add Auto Connect Script
+// By Leon Aiossa
+DeclareVariable(lServer);
+DeclareVariable(lPort);
+SetVariableData(lServer::$input::Enter Server::NexIRC::$server);
+SetVariableData(lPort::$input::Enter Port::NexIRC::$port2);
+AddAutoConnect(ReturnVariable[lServer]::ReturnVariable[lPort]);
+DoColor($activewindow::3Added ReturnVariable[lServer]:ReturnVariable[lPort] to auto connect list);
+ClearVariable(lServer);
+ClearVariable(lPort);

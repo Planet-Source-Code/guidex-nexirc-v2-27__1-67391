@@ -1,0 +1,96 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+<TITLE></TITLE>
+</HEAD>
+<BODY text=white link=lightcyan bgColor=black>
+<DIV><FONT face=Tahoma size=2 color=white><A 
+href="http://www.team-nexgen.com/software.shtml#nexirc"><IMG alt="" 
+src="http://www.team-nexgen.com/images/nirclogosm.gif" 
+border=0></A>      </FONT></DIV>
+<DIV><FONT face=Arial color=white>- Tutorial 1 (The Hello Bob 
+Script)</FONT></DIV>
+<DIV><FONT > <FONT face=Arial>By </FONT> <A 
+href="mailto:guidex@team-nexgen.com"><FONT face=Arial>Leon 
+Aiossa</FONT> 
+</A><FONT face=Arial>&nbsp;(|guideX|)</FONT></FONT></DIV>
+<OL>
+  <LI><FONT face=Arial><FONT color=white 
+ >From the status window of NexIRC, 
+type:<STRONG> 
+</STRONG><STRONG><FONT 
+  color=green>DeclareVariable(lName);</FONT></STRONG> Then hit enter. Asuming 
+  your typed it correctly, NexIRC should&nbsp;add the following text to the 
+  Status window ':. Script Command [DeclareVariable(lName);]', You just declared 
+  a variable. Variables are usefull if you wish to hold a number or words in 
+  memory until NexIRC is closed or you type ?clear from the status window. If 
+  your scripting syntax was incorrect, NexIRC will say something like ':. 
+  Unknown Command'.</FONT> </FONT>
+  <LI><FONT face=Arial><FONT color=white><FONT ><FONT >Type: 
+<STRONG><FONT color=green>SetVariableData(lName::$input::Enter 
+  Your Name::NexIRC::Bob);</FONT>   
+</STRONG></FONT></FONT><FONT 
+  >Then hit enter.</FONT><FONT >You should be prompted with the $input command for 
+you to enter your name, hit <STRONG><FONT 
+  color=green>enter</FONT></STRONG> to use Bob.</FONT></FONT> </FONT>
+  <LI><FONT face=Arial><FONT color=white><FONT ><FONT >Then Type: <STRONG><FONT 
+  color=green>MsgBox(Hello ReturnVariable[lName]);</FONT> 
+</STRONG></FONT></FONT><FONT >Then hit enter.</FONT><FONT 
+  >If everything was done proporly, you should have 
+seen a MsgBox which says 'Hello Bob'.</FONT></FONT> </FONT>
+  <LI><FONT face=Arial><FONT color=white><FONT ><FONT >Now that you are done using the 'lName' 
+variable, you should probably clear it from memory. Type 
+<STRONG><FONT 
+  color=green>ClearVariable(lName);</FONT></STRONG></FONT></FONT><FONT 
+  >Then Hit Enter.</FONT></FONT> </FONT>
+  <LI><FONT face=Arial><FONT color=white><FONT >Now that you have created your first script, you 
+should probably view it to make sure it is typed correctly.</FONT><FONT ><FONT >Type 
+<STRONG><FONT 
+  color=green>?view</FONT>,</STRONG></FONT></FONT><FONT 
+  >then hit enter.</FONT><FONT >The ?view command is good when you are writting 
+small code fragments.</FONT></FONT> 
+  </FONT>
+  <LI><FONT face=Arial><FONT color=white><FONT ><FONT >If the script looks good, you should learn 
+how to save it. Type: <STRONG><FONT 
+  color=green>?save</FONT></STRONG></FONT></FONT><FONT 
+  >, then hit enter.</FONT></FONT> </FONT>
+  <LI><FONT face=Arial><FONT color=white><FONT >NexIRC will ask you for a filename, do not enter a 
+full path, just a filename.</FONT><FONT 
+  > For example, you could 
+type&nbsp;'hellobob.nirc' or 'mytestscripts\hellobob.nirc', however for now, 
+type<STRONG><FONT 
+  color=green>hellobob.nirc</FONT></STRONG>,</FONT><FONT 
+  >Then hit enter.</FONT><FONT >Your script should be in 
+&lt;nexircdir&gt;\data\scripts\hellobob.nirc.</FONT></FONT> </FONT>
+  <LI><FONT face=Arial><FONT color=white 
+ >Right click the 
+  status window, and click <FONT color=green>       
+<STRONG>'Window/Menu Editor</STRONG>'</FONT>.</FONT> </FONT>
+  <LI><FONT face=Arial color=white >In the 'menus' 
+  listbox (on the bottom right), you should see a menu called <FONT 
+  color=green>         
+     '<STRONG>ROOT</STRONG>'</FONT>  click that. </FONT>
+  <LI><FONT > <FONT face=Arial><FONT color=white>  Where it says 'Caption' type<STRONG><FONT color=green>Hello 
+  Bob</FONT> 
+</STRONG>, where it says 'Command'&nbsp;type </FONT><FONT 
+  color=green>     
+<STRONG>RunScriptFile(hellobob.nirc);</STRONG></FONT> 
+  </FONT> 
+</FONT>
+  <LI><FONT face=Arial color=white > Click 
+  <FONT color=green>  '<STRONG>Add</STRONG>'</FONT> on the right 
+hand side above the 'sub menus' listbox. </FONT>
+  <LI><FONT face=Arial><FONT color=white 
+ >Now right click 
+  on your status window, and you should see an entry at the bottom called '<FONT 
+  color=green>         
+        <STRONG>Hello Bob</STRONG>'</FONT>, click it. 
+  It should prompt you with a 
+Msgbox that says "Script: Hello Bob".</FONT> </FONT>
+  <LI><FONT face=Arial >After you have completed this script, you should 
+  probably clear it from your status window. Type <STRONG><FONT 
+  color=green>?clear</FONT></STRONG> then hit 
+enter.</FONT></LI></OL>
+
+</BODY>
+</HTML>

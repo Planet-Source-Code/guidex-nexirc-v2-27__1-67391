@@ -1,0 +1,5 @@
+// Op Script
+// By Leon Aiossa
+SendActiveServer(MODE $channel +o $nicklist);
+VBScript(mdiNexIRC.ActiveForm.lvwNames.ListItems.Clear);
+SendActiveServer(NAMES $channel);

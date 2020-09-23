@@ -1,0 +1,7 @@
+// VBScript If Example
+// Leon Aiossa
+VBScript(Dim i);
+VBScript(Randomize Timer);
+VBScript(i = 9 * Rnd);
+VBScript(If i > 5 Then MsgBox "Result was: " & i & " Above 5");
+VBScript(If i < 5 Then MsgBox "Result was: " & i & " Below 5");

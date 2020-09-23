@@ -1,0 +1,6 @@
+'Useage: WINI <Filename>, <Section>, <Key>, <NewString>
+'Example Script by Leon Aiossa
+
+Option Explicit
+WINI "C:\NexIRC Test.ini", "Settings", "Testing", "True"
+End Sub

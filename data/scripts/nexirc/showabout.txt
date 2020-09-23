@@ -1,0 +1,10 @@
+frmCustomize.Show
+frmCustomize.fraSettings(0).Visible = False
+frmCustomize.fraSettings(1).Visible = False
+frmCustomize.fraSettings(2).Visible = False
+frmCustomize.fraSettings(3).Visible = False
+frmCustomize.fraSettings(4).Visible = False
+frmCustomize.fraSettings(5).Visible = False
+frmCustomize.fraSettings(6).Visible = True
+frmCustomize.optCheck(6).Value = True
+frmCustomize.optCheck(0).Value = False
